@@ -9,7 +9,8 @@
 
 .icon-card-body {
   background-color: var(--gh-theme-900);
-  color: var(--gh-light-color);
+  /* color: var(--gh-light-color); */
+  color: #adb5bd;
   padding: 2rem;
   padding-top: 4rem;
   text-align: center;
