@@ -429,7 +429,7 @@ section {
 }
 
 #homeCover {
-  backdrop-filter: brightness(0.9 ) blur(0.1rem);
+  backdrop-filter: brightness(0.9) blur(0.1rem);
   height: 100%;
   width: 100%;
   position: absolute;
@@ -439,29 +439,29 @@ section {
 }
 
 .mainLogo {
-  height: 0.8em;
+  height: 2em;
   padding-left: 0.08em;
 }
 
 .mainTitle,
 .subTitle {
   color: var(--gh-light-color);
-  text-transform: uppercase;
-}
+  
+} 
 
-.mainTitle {
+ .mainTitle {
   font-family: var(--gh-title-font);
-  font-size: 5rem;
+  font-size: 10rem;
   line-height: 4rem;
-}
+} 
 
-.subTitle {
+ .subTitle {
   font-family: var(--gh-subtitle-font);
   font-size: 1.28rem;
   letter-spacing: 0.1rem;
   line-height: 1.1rem;
   font-weight: 300;
-}
+}  
 
 /* END: Home Section */
 
@@ -578,6 +578,11 @@ footer .card {
     height: 40px;
     padding-right: 9rem;
     object-fit: cover;
+  }
+
+  .mainLogo {
+    height: 3.5em;
+    padding-left: 0.08em;
   }
 }
 
