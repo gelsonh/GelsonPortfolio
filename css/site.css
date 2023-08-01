@@ -413,6 +413,8 @@ section {
   --bs-btn-border-color: var(--gh-theme-600);
   --bs-btn-hover-bg: var(--gh-theme-700);
   --bs-btn-hover-border-color: var(--gh-theme-700);
+  --bs-btn-active-bg: var(--gh-theme-700);
+  --bs-btn-active-border-color: var(--gh-theme-700);
 }
 
 /* END: Elements Overrides */
@@ -440,28 +442,28 @@ section {
 
 .mainLogo {
   height: 2em;
+
   padding-left: 0.08em;
 }
 
 .mainTitle,
 .subTitle {
   color: var(--gh-light-color);
-  
-} 
+}
 
- .mainTitle {
+.mainTitle {
   font-family: var(--gh-title-font);
   font-size: 10rem;
   line-height: 4rem;
-} 
+}
 
- .subTitle {
+.subTitle {
   font-family: var(--gh-subtitle-font);
   font-size: 1.28rem;
   letter-spacing: 0.1rem;
   line-height: 1.1rem;
   font-weight: 300;
-}  
+}
 
 /* END: Home Section */
 
@@ -483,40 +485,6 @@ section {
 .section-page:nth-child(odd) > .container::after {
   background-color: var(--gh-theme-150);
 }
-
-/* section dividers */
-
-/* .section-page > .container::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 3rem;
-  clip-path: ellipse(50% 100% at top center);
-  z-index: 1;
-} */
-
-/* .section-page:nth-child(even) > .container::after {
-  clip-path: polygon(0% 0%, 100% 0%, 0% 100%);
-}
-.section-page:nth-child(odd) > .container::after {
-  clip-path: polygon(1000% 100%, 100% 0%, 0% 0%);
-} */
-/* 
-.section-page:nth-child(even) > .container::after {
-  clip-path: polygon(
-    0 0,
-    100% 0,
-    100% calc(100% - 50px),
-    50% 100%,
-    0 calc(100% - 50px)
-  );
-}
-.section-page:nth-child(odd) > .container::after {
-  clip-path: polygon(0 0, 50% 50px, 100% 0, 100% 100%, 0 100%);
-  margin-top: -40px;
-} */
 
 /* contact form box-shadow */
 .box-shadow {
