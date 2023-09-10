@@ -243,6 +243,10 @@ footer .card {
     padding-top: 0.25rem;
   }
 
+  .mainLogo {
+    height: 3.5em;
+    padding-left: 0.08em;
+  }
 }
 
 /* Medium devices (tablets, 768px and up) */
