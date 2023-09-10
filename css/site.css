@@ -18,44 +18,34 @@
   --gh-line-height: 1.5rem;
   --gh-title-color: var(--gh-dark-color);
 
-  /* #region BS color swatches */
-  /* default theme will be blue */
-
   --gh-gray-core: #adb5bd;
+  --gh-theme-core: var(--gh-gray-core);
+  --gh-theme-100: var(--gh-gray-100);
+  --gh-theme-150: var(--gh-gray-150);
+  --gh-theme-200: var(--gh-gray-200);
+  --gh-theme-300: var(--gh-gray-300);
+  --gh-theme-400: var(--gh-gray-400);
+  --gh-theme-500: var(--gh-gray-500);
+  --gh-theme-600: var(--gh-gray-600);
+  --gh-theme-700: var(--gh-gray-700);
+  --gh-theme-800: var(--gh-gray-800);
+  --gh-theme-850: var(--gh-gray-850);
+  --gh-theme-900: var(--gh-gray-900);
 
-  --gh-gray-100: hsl(247, 11%, 69%);
-  --gh-gray-150: hsl(45, 100%, 100%);
-  --gh-gray-200: hsl(37, 98%, 100%);
-  --gh-gray-300: hsl(37, 92%, 97%);
-  --gh-gray-400: hsl(37, 85%, 90%);
-  --gh-gray-500: hsl(37, 77%, 84%);
-  --gh-gray-600: hsl(37, 33%, 70%);
-  --gh-gray-700: hsl(37, 18%, 55%);
-  --gh-gray-800: hsl(37, 14%, 41%);
-  --gh-gray-850: hsl(37, 14%, 26%);
-  --gh-gray-900: hsl(37, 14%, 11%);
-  /* 
-  #a19279ff
-  hsl(37, 18%, 55%)
-    hsl(37, 33%, 70%)
-    hsl(37, 77%, 84%)
-    hsl(37, 14%, 11%)
-    hsl(37, 14%, 26%)
-    hsl(37, 14%, 41%) */
-  [data-gh-theme="gray"] {
-    --gh-theme-core: var(--gh-gray-core);
-    --gh-theme-100: var(--gh-gray-100);
-    --gh-theme-150: var(--gh-gray-150);
-    --gh-theme-200: var(--gh-gray-200);
-    --gh-theme-300: var(--gh-gray-300);
-    --gh-theme-400: var(--gh-gray-400);
-    --gh-theme-500: var(--gh-gray-500);
-    --gh-theme-600: var(--gh-gray-600);
-    --gh-theme-700: var(--gh-gray-700);
-    --gh-theme-800: var(--gh-gray-800);
-    --gh-theme-850: var(--gh-gray-850);
-    --gh-theme-900: var(--gh-gray-900);
-  }
+  --gh-dark-color: #212121;
+  --gh-light-color: #deeefb;
+
+  --gh-gray-100: hsl(210, 17%, 98%);
+  --gh-gray-150: hsl(210, 17%, 93%);
+  --gh-gray-200: hsl(210, 17%, 88%);
+  --gh-gray-300: hsl(210, 17%, 78%);
+  --gh-gray-400: hsl(210, 17%, 68%);
+  --gh-gray-500: rgb(130, 148, 166);
+  --gh-gray-600: hsl(210, 17%, 48%);
+  --gh-gray-700: hsl(210, 17%, 38%);
+  --gh-gray-800: hsl(210, 17%, 28%);
+  --gh-gray-850: hsl(210, 17%, 23%);
+  --gh-gray-900: hsl(210, 17%, 18%);
 }
 
 /* Element Overrides */
@@ -88,7 +78,7 @@ h1,
 }
 
 a {
-  color: var(--gh-orange-500);
+  color: #fd7e14;
 }
 
 a:hover {
@@ -107,6 +97,25 @@ section {
   align-items: center;
   flex-direction: column;
 }
+
+.mainLogo {
+  height: 2em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.buttonContainer {
+  text-align: center;
+}
+
+/* ADD Photo */
+/* .mainTitle img {
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+  margin: 0 auto;
+} */
 
 .btn-primary {
   --bs-btn-bg: var(--gh-theme-600);
@@ -140,10 +149,11 @@ section {
   justify-content: center;
   align-items: center;
 }
-
 .mainLogo {
   height: 2em;
-  padding-left: 0.08em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .mainTitle,
@@ -197,14 +207,6 @@ section {
 
 /* START: Footer styles */
 
-.imgSignature {
-  float: left;
-  width: 255px;
-  height: 40px;
-  padding-right: 10rem;
-  object-fit: cover;
-}
-
 .socialicons {
   font-size: 2rem;
   transition: color 0.25s;
@@ -241,18 +243,6 @@ footer .card {
     padding-top: 0.25rem;
   }
 
-  .imgSignature {
-    float: left;
-    width: 290px;
-    height: 40px;
-    padding-right: 9rem;
-    object-fit: cover;
-  }
-
-  .mainLogo {
-    height: 3.5em;
-    padding-left: 0.08em;
-  }
 }
 
 /* Medium devices (tablets, 768px and up) */
