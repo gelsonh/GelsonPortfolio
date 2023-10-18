@@ -678,8 +678,31 @@
             information. Sharing knowledge is an imperative aspect of my
             professional pursuits.
           </p>
-          <template id="blog-template"> </template>
-          <!-- <div id="blog"></div> -->
+          <template id="blog-template">
+            <!-- Template for individual blog posts -->
+            <div class="col">
+              <div class="hc-wrapper">
+                <div class="hc-card">
+                  <picture>
+                    <source media="(min-width: 992px)" srcset="" />
+                    <img src="" class="blog-image" alt="Blog Image" />
+                  </picture>
+                  <div class="hc-content">
+                    <p data-blog="title">Title Placeholder</p>
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-toggle="modal"
+                      data-bs-target="#blogModal"
+                      data-blog="readMoreLink"
+                    >
+                      Learn More
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </template>
         </div>
       </section>
       <!-- END: Section Blog -->

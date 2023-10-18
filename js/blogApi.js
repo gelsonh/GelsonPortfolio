@@ -1,83 +1,61 @@
 function fetchBlogData() {
-  const baseUrl = "https://thewritinglife-production.up.railway.app";
+  const baseUrl = "https://thewritinglife-production.up.railway.app/";
 
+  // Fetch a specific blog post by ID (in this case, ID 3)
   fetch(`${baseUrl}/api/BlogPosts/3`)
     .then((response) => response.json())
     .then(function (data) {
       displayBlogData(data, baseUrl);
-    });
+    })
+    .catch((error) => console.error(error));
 }
 
 function displayBlogData(blogPosts, baseUrl) {
   let template = document.getElementById("blog-template");
   let blogSection = document.getElementById("blogs");
-  [
-    {
-      title: "string",
-      abstract: "string",
-      content: "string",
-      created: "2023-09-08T14:55:55.412Z",
-      updated: "2023-09-08T14:55:55.412Z",
-      slug: "string",
-      imageData: "string",
-      imageType: "string",
-    },
-  ];
+
+  // Clear the existing content in the blog section
+  blogSection.innerHTML = "";
 
   blogPosts.forEach((blogPost) => {
+    // Clone the template node to create a new blog post element
     const blogPostCard = document.importNode(template.content, true);
-    //format image
-    let imageDiv = blogPostCard.querySelector('[data-blog="imageLink"]');
-    imageDiv.setAttribute("href", `${baseUrl}/content/${blogPost.slug}`);
-    imageDiv.href = `${baseUrl}/content/${blogPost.slug}`;
 
-    let imgTag = document.createElement("img");
-    imgTag.setAttribute(
-      "src",
-      `data:${blogPost.imageType};base64,${blogPost.imageData}`
+    // Update the blog post content using data from the API
+    // Set the title
+    const blogTitle = blogPostCard.querySelector('[data-blog="title"]');
+    blogTitle.textContent = blogPost.title;
+
+    // Set the image
+    const blogImage = blogPostCard.querySelector('[data-blog="image"]');
+    blogImage.src = `${baseUrl}/content/${blogPost.slug}`;
+    blogImage.alt = blogPost.title;
+
+    // Set the content
+    const blogContent = blogPostCard.querySelector('[data-blog="content"]');
+    blogContent.innerHTML = blogPost.abstract;
+
+    // Set the read more link
+    const blogLink = blogPostCard.querySelector('[data-blog="readMoreLink"]');
+    blogLink.href = `${baseUrl}/content/${blogPost.slug}`;
+
+    // Set the published date
+    const blogPubDate = blogPostCard.querySelector(
+      '[data-blog="publishedDate"]'
     );
-    imgTag.classList.add("blog-image");
-    imageDiv.appendChild(imgTag);
-    // <img src="data:image/gif;base64,xxxxxxxxxxxxx..." class="blog-image" alt="...">
-    //add title
-    let blogTitleDiv = blogPostCard.querySelector('[data-blog="title"]');
-    blogTitleDiv.innerHTML = blogPost.title;
+    const createdDate = new Date(blogPost.created);
+    const currentDate = new Date();
 
-    let blogDate = new Date(blogPost.created); // 2009-11-10
-    let month = blogDate.toLocaleString("default", {month: "long"});
-    let day = blogDate.getDate();
+    // Calculate the time difference
+    const timeDifference = currentDate - createdDate;
+    const daysAgo = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
 
-    //add day
-    let blogDayDiv = blogPostCard.querySelector('[data-blog="day"]');
-    blogDayDiv.innerHTML = day;
+    blogPubDate.textContent =
+      daysAgo === 1
+        ? `Published ${daysAgo} day ago`
+        : `Published ${daysAgo} days ago`;
 
-    //add month
-    let blogMonthDiv = blogPostCard.querySelector('[data-blog="month"]');
-
-    blogMonthDiv.innerHTML = month;
-
-    //add content
-    let blogContentDiv = blogPostCard.querySelector('[data-blog="content"]');
-    blogContentDiv.innerHTML = blogPost.content;
-
-    //readmore link
-    let blogLink = blogPostCard.querySelector('[data-blog="readMoreLink"]');
-    blogLink.setAttribute("href", `${baseUrl}/content/${blogPost.slug}`);
-
-    let blogPubDate = blogPostCard.querySelector('[data-blog="publishedDate"]');
-
-    let dateToday = new Date();
-    let createdDate = new Date(
-      blogPost.Updated != null ? blogPost.Updated : blogPost.Created
-    );
-    let diffTime = Math.abs(dateToday.getTime() - createdDate.getTime());
-    let lastUpdated = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
-    if (lastUpdated == 1) {
-      blogPubDate.innerHTML = `Published ${lastUpdated} day ago`;
-    } else {
-      blogPubDate.innerHTML = `Published ${lastUpdated} days ago`;
-    }
-
+    // Append the blog post element to the blog section
     blogSection.appendChild(blogPostCard);
   });
 }
