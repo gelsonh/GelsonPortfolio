@@ -679,7 +679,7 @@
           </p>
           <template id="blog-template">
             <!-- Template for individual blog posts -->
-            <div class="col">
+            <div class="col-12">
               <div class="hc-wrapper">
                 <div class="hc-card">
                   <picture>
@@ -688,6 +688,12 @@
                   </picture>
                   <div class="hc-content">
                     <p data-blog="title">Title Placeholder</p>
+                    <p data-blog="publishedDate"></p>
+                    <p data-blog="abstract"></p>
+                    <p data-blog="category"></p>
+                    <p data-blog="content"></p>
+                    <p data-blog="tags"></p>
+                    <!-- Elemento para la fecha de publicación -->
                     <button
                       type="button"
                       class="btn btn-secondary"
@@ -1266,7 +1272,7 @@
       <div class="modal-dialog modal-dialog-centered modal-xl">
         <div class="modal-content">
           <div class="modal-header">
-            <h1 class="modal-title fs-5">The Writing Life</h1>
+            <h1 class="modal-title fs-5">Dev Diary</h1>
             <button
               type="button"
               class="btn-close"
@@ -1357,9 +1363,9 @@
               </div>
               <div class="col-12 col-lg-7">
                 <!-- About the project -->
-                <h3>The Writing Life</h3>
+                <h3>Dev Diary</h3>
                 <p>
-                  The Writing Life is a meticulously crafted platform that
+                  The Dev Diary is a meticulously crafted platform that
                   utilizes cutting-edge technologies, including ASP.NET, MVC,
                   C#, and SQL, to provide a robust system for sharing insights
                   and knowledge in the realm of programming and technology. Our
@@ -1444,7 +1450,7 @@
               Close
             </button>
             <button type="button" class="btn btn-secondary">
-              <a href="#" class="text-light">Visit Project</a>
+              <a href="https://devdiary.up.railway.app/" class="text-light">Visit Project</a>
             </button>
           </div>
         </div>
