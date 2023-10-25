@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
   function fetchBlogData() {
-    const baseUrl = "https://devdiary-production.up.railway.app";
+    const baseUrl = "https://devdiary.up.railway.app";
 
-    fetch(`${baseUrl}/api/BlogPosts/1`)
+    fetch(`${baseUrl}/api/BlogPosts/3`)
       .then((response) => response.json())
       .then(function (data) {
         displayBlogData(data, baseUrl);
@@ -25,25 +25,25 @@ document.addEventListener("DOMContentLoaded", function () {
       // Set the image
       const blogImage = blogPostCard.querySelector(".blog-image");
       blogImage.src = `${baseUrl}/content/${blogPost.imageFile}`; // Update with the correct field
-      blogImage.alt = blogPost.title;
+      // blogImage.alt = blogPost.title;
 
       // Set the content (abstract in this case)
       const blogContent = blogPostCard.querySelector('[data-blog="abstract"]'); // Update to match the field name
       blogContent.textContent = blogPost.abstract; // Update to match the field name
 
       // Set the category
-      const blogCategory = blogPostCard.querySelector('[data-blog="category"]');
-      blogCategory.textContent = blogPost.category; // Update to match the field name
+      // const blogCategory = blogPostCard.querySelector('[data-blog="category"]');
+      // blogCategory.textContent = blogPost.category; // Update to match the field name
 
       // Set the content
-      const blogFullContent = blogPostCard.querySelector(
-        '[data-blog="content"]'
-      );
-      blogFullContent.textContent = blogPost.content;
+      // const blogFullContent = blogPostCard.querySelector(
+      //   '[data-blog="content"]'
+      // );
+      // blogFullContent.textContent = blogPost.content;
 
       // Set the tags
-      const blogTags = blogPostCard.querySelector('[data-blog="tags"]');
-      blogTags.textContent = blogPost.tags; // Update to match the field name
+      // const blogTags = blogPostCard.querySelector('[data-blog="tags"]');
+      // blogTags.textContent = blogPost.tags; // Update to match the field name
 
       // Set the published date
       const blogPubDate = blogPostCard.querySelector(
@@ -59,8 +59,8 @@ document.addEventListener("DOMContentLoaded", function () {
           : `Published ${daysAgo} days ago`;
 
       // Set the read more link
-      const blogLink = blogPostCard.querySelector('[data-blog="readMoreLink"]');
-      blogLink.href = `${baseUrl}/content/${blogPost.slug}`;
+      // const blogLink = blogPostCard.querySelector('[data-blog="readMoreLink"]');
+      // blogLink.href = `${baseUrl}/content/${blogPost.slug}`;
 
       // Append the blog post element to the blog section
       blogSection.appendChild(blogPostCard);

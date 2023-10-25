@@ -678,35 +678,45 @@
             professional pursuits.
           </p>
           <template id="blog-template">
-            <!-- Template for individual blog posts -->
-            <div class="col-12">
-              <div class="hc-wrapper">
-                <div class="hc-card">
-                  <picture>
-                    <source media="(min-width: 992px)" srcset="" />
-                    <img src="" class="blog-image" alt="Blog Image" />
-                  </picture>
-                  <div class="hc-content">
-                    <p data-blog="title">Title Placeholder</p>
-                    <p data-blog="publishedDate"></p>
-                    <p data-blog="abstract"></p>
-                    <p data-blog="category"></p>
-                    <p data-blog="content"></p>
-                    <p data-blog="tags"></p>
-                    <!-- Elemento para la fecha de publicación -->
-                    <button
-                      type="button"
-                      class="btn btn-secondary"
-                      data-bs-toggle="modal"
-                      data-bs-target="#blogModal"
-                      data-blog="readMoreLink"
-                    >
-                      Learn More
-                    </button>
+            <article class="card mb-4 blog-article">
+              <div class="row blog-row g-0">
+                <div class="col-lg-4 blog-header">
+                  <!-- blog image -->
+                  <a target="_blank" href="#" class="blog-image-link">
+                    <img src="" class="blog-image" alt="Blog post image" />
+                  </a>
+                </div>
+
+                <div class="col-lg-8">
+                  <!-- title and text preview -->
+                  <div
+                    class="card-body h-100 d-flex flex-column justify-content-around"
+                  >
+                    <h4 class="card-title" data-blog="title">
+                      Title Placeholder
+                    </h4>
+
+                    <p data-blog="abstract" class="card-text line-clamp">
+                      Abstrac Placeholder
+                    </p>
+                    <div>
+                      <a
+                        target="_blank"
+                        href="https://devdiary.up.railway.app/"
+                        class="btn btn-primary"
+                        >Read More</a
+                      >
+                    </div>
+                    <p class="card-text">
+                      <small
+                        class="text-muted>"
+                        data-blog="publishedDate"
+                      ></small>
+                    </p>
                   </div>
                 </div>
               </div>
-            </div>
+            </article>
           </template>
         </div>
       </section>
