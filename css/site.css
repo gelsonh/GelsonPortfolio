@@ -132,16 +132,16 @@ section {
 
 #home {
   /* background-color: var(--gh-theme-200); */
-  /* background-image: url(/img/mainBGWhite.jpg); */
+  background-image: url(/img/Logo/Galaxy1.jpeg);
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
   position: relative;
-  background-color: linear-gradient(to bottom, #709a8f, #046975);
+  /* background-color: linear-gradient(to bottom, #709a8f, #046975); */
 }
 
 #homeCover {
-  backdrop-filter: brightness(0.9) blur(0.1rem);
+  backdrop-filter: brightness(0.9) blur(0rem);
   height: 100%;
   width: 100%;
   position: absolute;
