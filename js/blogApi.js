@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   function fetchBlogData() {
-    const baseUrl = "https://devdiary.up.railway.app";
+    const baseUrl = "https://devdiary-production.up.railway.app";
 
     fetch(`${baseUrl}/api/BlogPosts/3`)
       .then((response) => response.json())
@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
       // Set the image
       const blogImage = blogPostCard.querySelector(".blog-image");
-      blogImage.src = `${baseUrl}/content/${blogPost.imageFile}`; // Update with the correct field
+      blogImage.src = blogPost.imageFileString; // Update with the correct field
       // blogImage.alt = blogPost.title;
 
       // Set the content (abstract in this case)
@@ -70,4 +70,3 @@ document.addEventListener("DOMContentLoaded", function () {
   // Llamar a la función para cargar los datos
   fetchBlogData();
 });
-
