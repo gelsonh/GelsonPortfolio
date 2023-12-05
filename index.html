@@ -44,6 +44,7 @@
     <link rel="stylesheet" href="/css/themes.css" />
     <link rel="stylesheet" href="/css/blogCard.css" />
     <link rel="stylesheet" href="/css/menuPill.css" />
+    <link rel="stylesheet" href="/css/darkMode.css" />
 
     <!-- Favicon -->
     <link
@@ -53,7 +54,7 @@
     />
   </head>
 
-  <body data-gh-theme="gray" data-gh-theme="orange">
+  <body data-gh-theme="light">
     <!-- Start NavBAR -->
     <div id="menuPillContainer" class="navbar navbar-dark">
       <nav id="menuPill" class="navbar-nav text-light">
@@ -175,21 +176,101 @@
       <section id="home">
         <div id="homeCover">
           <div class="mainHeader">
-            <div class="mainTitle">
-              <span>
-                <!-- <h1 class="display-1 text-center">
+            <div class="mainTitle"><span>Gelson Hernandez</span> <br /></div>
+            <div class="subTitle">
+              <span>Full Stack .Net Web Developer</span>
+            </div>
+            <!-- <span>
+                <h1 class="display-1 text-center">
                   Gelson Hernandez <br />
                   Software Developer
-                </h1> -->
+                </h1>
                 <img
                   src="/img/Logo/mainLogo.png"
                   alt="Developer Logo"
                   class="mainLogo"
                 />
-              </span>
-            </div>
+              </span> -->
+
             <div class="buttonContainer">
               <a href="#contact" class="btn btn-primary w-auto">CONTACT ME</a>
+            </div>
+
+            <!-- Botón o interruptor para cambiar el modo -->
+            <div class="buttonContainer">
+              <label class="switch">
+                <input class="switch__input" type="checkbox" role="switch" />
+                <svg
+                  class="switch__icon switch__icon--light"
+                  viewBox="0 0 12 12"
+                  width="12px"
+                  height="12px"
+                  aria-hidden="true"
+                >
+                  <g
+                    fill="none"
+                    stroke="#fff"
+                    stroke-width="1"
+                    stroke-linecap="round"
+                  >
+                    <circle cx="6" cy="6" r="2" />
+                    <g stroke-dasharray="1.5 1.5">
+                      <polyline
+                        points="6 10,6 11.5"
+                        transform="rotate(0,6,6)"
+                      />
+                      <polyline
+                        points="6 10,6 11.5"
+                        transform="rotate(45,6,6)"
+                      />
+                      <polyline
+                        points="6 10,6 11.5"
+                        transform="rotate(90,6,6)"
+                      />
+                      <polyline
+                        points="6 10,6 11.5"
+                        transform="rotate(135,6,6)"
+                      />
+                      <polyline
+                        points="6 10,6 11.5"
+                        transform="rotate(180,6,6)"
+                      />
+                      <polyline
+                        points="6 10,6 11.5"
+                        transform="rotate(225,6,6)"
+                      />
+                      <polyline
+                        points="6 10,6 11.5"
+                        transform="rotate(270,6,6)"
+                      />
+                      <polyline
+                        points="6 10,6 11.5"
+                        transform="rotate(315,6,6)"
+                      />
+                    </g>
+                  </g>
+                </svg>
+                <svg
+                  class="switch__icon switch__icon--dark"
+                  viewBox="0 0 12 12"
+                  width="12px"
+                  height="12px"
+                  aria-hidden="true"
+                >
+                  <g
+                    fill="none"
+                    stroke="#fff"
+                    stroke-width="1"
+                    stroke-linejoin="round"
+                    transform="rotate(-45,6,6)"
+                  >
+                    <path
+                      d="m9,10c-2.209,0-4-1.791-4-4s1.791-4,4-4c.304,0,.598.041.883.105-.995-.992-2.367-1.605-3.883-1.605C2.962.5.5,2.962.5,6s2.462,5.5,5.5,5.5c1.516,0,2.888-.613,3.883-1.605-.285.064-.578.105-.883.105Z"
+                    />
+                  </g>
+                </svg>
+                <span class="switch__sr">Dark Mode</span>
+              </label>
             </div>
           </div>
         </div>
@@ -830,7 +911,27 @@
       <div class="container-fluid">
         <div class="row align-items-center g-3">
           <div class="col-3">
-            <img src="/img/Logo/NLogo0.png" height="60" alt="Logo" />
+            <span>Build by</span>
+            <!-- Light Mode -->
+            <img
+              src="/img/Logo/light-logo.png"
+              class="theme-logo"
+              data-gh-theme="light"
+              width="60"
+              height="60"
+              alt="Light Mode Logo"
+            />
+            <!-- Dark Mode -->
+            <img
+              src="/img/Logo/dark-logo.png"
+              class="theme-logo"
+              data-gh-theme="dark"
+              width="60"
+              height="60"
+              alt="Dark Mode Logo"
+            />
+            <br />
+            <span>&copy; 2023 Gelson Hernandez</span>
           </div>
           <div
             class="col-9 col-lg-6 d-flex justify-content-end justify-content-lg-center"
@@ -838,7 +939,10 @@
             <div class="card shadow">
               <div class="card-body text-center text-body-emphasis">
                 <!-- TODO: CHANGE THIS TO THE BUG TRACKER LINK -->
-                Check out my <a href="#projects">Bug Tracking System</a>!
+                Check out my
+                <a href="https://bugtrackingsystem.up.railway.app/"
+                  >Bug Tracking System</a
+                >!
               </div>
             </div>
           </div>
