@@ -25,25 +25,22 @@ document.addEventListener("DOMContentLoaded", function () {
       // Set the image
       const blogImage = blogPostCard.querySelector(".blog-image");
       blogImage.src = blogPost.imageFileString; // Update with the correct field
-      // blogImage.alt = blogPost.title;
+      let blogDate = new Date(blogPost.created); // 2009-11-10
+      let month = blogDate.toLocaleString("default", {month: "long"});
+      let day = blogDate.getDate();
+
+      //add day
+      let blogDayDiv = blogPostCard.querySelector(".blog-day");
+      blogDayDiv.innerHTML = day;
+
+      //add month
+      let blogMonthDiv = blogPostCard.querySelector(".blog-month");
+
+      blogMonthDiv.innerHTML = month;
 
       // Set the content (abstract in this case)
       const blogContent = blogPostCard.querySelector('[data-blog="abstract"]'); // Update to match the field name
       blogContent.textContent = blogPost.abstract; // Update to match the field name
-
-      // Set the category
-      // const blogCategory = blogPostCard.querySelector('[data-blog="category"]');
-      // blogCategory.textContent = blogPost.category; // Update to match the field name
-
-      // Set the content
-      // const blogFullContent = blogPostCard.querySelector(
-      //   '[data-blog="content"]'
-      // );
-      // blogFullContent.textContent = blogPost.content;
-
-      // Set the tags
-      // const blogTags = blogPostCard.querySelector('[data-blog="tags"]');
-      // blogTags.textContent = blogPost.tags; // Update to match the field name
 
       // Set the published date
       const blogPubDate = blogPostCard.querySelector(
@@ -57,10 +54,6 @@ document.addEventListener("DOMContentLoaded", function () {
         daysAgo === 1
           ? `Published ${daysAgo} day ago`
           : `Published ${daysAgo} days ago`;
-
-      // Set the read more link
-      // const blogLink = blogPostCard.querySelector('[data-blog="readMoreLink"]');
-      // blogLink.href = `${baseUrl}/content/${blogPost.slug}`;
 
       // Append the blog post element to the blog section
       blogSection.appendChild(blogPostCard);
