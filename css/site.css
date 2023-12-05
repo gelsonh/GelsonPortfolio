@@ -167,13 +167,13 @@ section {
 
 .mainTitle {
   font-family: var(--gh-title-font);
-  font-size: 10rem;
-  line-height: 4rem;
+  font-size: 3.5rem;
+  line-height: 3rem;
 }
 
 .subTitle {
   font-family: var(--gh-subtitle-font);
-  font-size: 1.28rem;
+  font-size: 1.2rem;
   letter-spacing: 0.1rem;
   line-height: 1.1rem;
   font-weight: 300;
@@ -235,6 +235,10 @@ footer .card {
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
   .mainTitle {
     font-size: 7rem;
     line-height: 5.5rem;
@@ -251,10 +255,6 @@ footer .card {
     height: 3.5em;
     padding-left: 0.08em;
   }
-}
-
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
 }
 
 /* Large devices (desktops, 992px and up) */

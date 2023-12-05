@@ -66,19 +66,29 @@ body[data-gh-theme="dark"] .btn-primary {
 body[data-gh-theme="dark"] .section-page h2 {
   color: #fff; /* Ajusta según tus preferencias en modo oscuro */
 }
+
 /* Estilos generales para las imágenes */
 .theme-logo {
-  display: none; /* Inicialmente oculta las imágenes */
+  display: none; /* Inicialmente oculta todas las imágenes */
 }
 
-/* Estilos específicos para el tema "light" */
-body[data-gh-theme="light"] .theme-logo[data-gh-theme="light"] {
+/* Estilos específicos para el tema "light"  */
+body[data-gh-theme="light"] .theme-logo-light {
   display: inline-block; /* Muestra la imagen en light mode */
 }
 
-/* Estilos específicos para el tema "dark" */
-body[data-gh-theme="dark"] .theme-logo[data-gh-theme="dark"] {
+/* Estilos específicos para el tema "dark"  */
+body[data-gh-theme="dark"] .theme-logo-dark {
   display: inline-block; /* Muestra la imagen en dark mode */
+}
+
+/* Estilos generales para el texto "Build by" */
+body[data-gh-theme="light"] .build-by-text {
+  color: #fff; /* Ajusta según tus preferencias en modo claro */
+}
+
+body[data-gh-theme="dark"] .build-by-text {
+  color: #333; /* Ajusta según tus preferencias en modo oscuro */
 }
 
 /* SWITCH */

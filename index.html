@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-gh-theme="light" data-gh-theme="dark">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta
@@ -54,7 +54,7 @@
     />
   </head>
 
-  <body>
+  <body data-gh-theme="light" data-gh-theme="dark">
     <!-- Start NavBAR -->
     <div id="menuPillContainer" class="navbar navbar-dark">
       <nav id="menuPill" class="navbar-nav text-light">
@@ -911,11 +911,12 @@
       <div class="container-fluid">
         <div class="row align-items-center g-3">
           <div class="col-3">
-            <span>Build by</span>
+            <span class="build-by-text">Build by</span>
+
             <!-- Light Mode -->
             <img
               src="/img/Logo/light-logo.png"
-              class="theme-logo"
+              class="theme-logo theme-logo-light"
               data-gh-theme="light"
               width="60"
               height="60"
@@ -924,14 +925,15 @@
             <!-- Dark Mode -->
             <img
               src="/img/Logo/dark-logo.png"
-              class="theme-logo"
+              class="theme-logo theme-logo-dark"
               data-gh-theme="dark"
               width="60"
               height="60"
               alt="Dark Mode Logo"
             />
+
             <br />
-            <span>&copy; 2023 Gelson Hernandez</span>
+            <span class="build-by-text">&copy; 2023 Gelson Hernandez</span>
           </div>
           <div
             class="col-9 col-lg-6 d-flex justify-content-end justify-content-lg-center"
