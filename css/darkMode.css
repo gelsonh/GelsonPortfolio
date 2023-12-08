@@ -33,16 +33,16 @@ body[data-gh-theme="light"] footer .card {
 
 /* Estilos específicos para el tema "dark" */
 body[data-gh-theme="dark"] .socialicons {
-  color: var(--gh-dark-color);
+  color: var(--gh-theme-100);
   /* Ajusta según tus preferencias en modo oscuro */
 }
 
 body[data-gh-theme="dark"] .socialicons:hover {
-  color: var(--gh-theme-700); /* Ajusta según tus preferencias en modo oscuro */
+  color: var(--gh-theme-400); /* Ajusta según tus preferencias en modo oscuro */
 }
 
 body[data-gh-theme="dark"] footer.fixed-bottom {
-  background-color: #fff; /* Ajusta según tus preferencias en modo oscuro */
+  background-color: #222; /* Ajusta según tus preferencias en modo oscuro */
 }
 
 body[data-gh-theme="dark"] footer .card {
@@ -88,7 +88,7 @@ body[data-gh-theme="light"] .build-by-text {
 }
 
 body[data-gh-theme="dark"] .build-by-text {
-  color: #333; /* Ajusta según tus preferencias en modo oscuro */
+  color: #fff; /* Ajusta según tus preferencias en modo oscuro */
 }
 
 /* SWITCH */
