@@ -5,7 +5,15 @@ document.addEventListener("DOMContentLoaded", function () {
     fetch(`${baseUrl}/api/BlogPosts/3`)
       .then((response) => response.json())
       .then(function (data) {
-        displayBlogData(data, baseUrl);
+        // Sort the blog posts by creation date in descending order
+        const sortedBlogPosts = data.sort(
+          (a, b) => new Date(b.created) - new Date(a.created)
+        );
+
+        // Get the first three blog posts
+        const latestBlogPosts = sortedBlogPosts.slice(0, 3);
+
+        displayBlogData(latestBlogPosts, baseUrl);
       });
   }
 
