@@ -98,12 +98,9 @@ section {
   flex-direction: column;
 }
 
-.mainLogo {
-  height: 2em;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
+/* .btn-shadow:hover {
+  box-shadow: 0 1px 3px;
+} */
 
 .buttonContainer {
   text-align: center;
@@ -150,12 +147,6 @@ section {
   justify-content: center;
   align-items: center;
 }
-.mainLogo {
-  height: 2em;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
 
 .mainTitle,
 .subTitle {
@@ -167,16 +158,52 @@ section {
 
 .mainTitle {
   font-family: var(--gh-title-font);
-  font-size: 3.5rem;
-  line-height: 3rem;
+  font-size: 2.7rem;
+  font-weight: 1.2rem;
+  letter-spacing: 0.3rem;
+  padding-bottom: 0.5rem;
+  animation: moveInLeft 1s ease-out;
 }
 
 .subTitle {
   font-family: var(--gh-subtitle-font);
   font-size: 1.2rem;
+  font-weight: 1.2rem;
   letter-spacing: 0.1rem;
-  line-height: 1.1rem;
-  font-weight: 300;
+
+  animation: moveInRight 1s ease-out;
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  80% {
+    transform: translateX(10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+
+  80% {
+    transform: translateX(-10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
 }
 
 /* END: Home Section */
@@ -240,20 +267,16 @@ footer .card {
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   .mainTitle {
-    font-size: 7rem;
-    line-height: 5.5rem;
+    font-size: 4rem;
+    font-weight: 4rem;
+    letter-spacing: 0.4rem;
+    padding-bottom: 1.5rem;
   }
 
   .subTitle {
-    font-size: 1.7rem;
-    line-height: 1.2rem;
-    letter-spacing: 0.18rem;
-    padding-top: 0.25rem;
-  }
-
-  .mainLogo {
-    height: 3.5em;
-    padding-left: 0.08em;
+    font-size: 1.5rem;
+    font-weight: 1.5rem;
+    letter-spacing: 0.2rem;
   }
 }
 
