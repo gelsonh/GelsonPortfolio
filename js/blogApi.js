@@ -4,7 +4,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
     fetch(`${baseUrl}/api/BlogPosts/3`)
       .then((response) => response.json())
+      // This line of code converts the body of the Fetch response into a JavaScript object using the JSON format.
+      // This makes it easier to handle and use the data in the code, as JSON is easily parseable in JavaScript.
       .then(function (data) {
+        
         // Sort the blog posts by creation date in descending order
         const sortedBlogPosts = data.sort(
           (a, b) => new Date(b.created) - new Date(a.created)
