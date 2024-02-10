@@ -139,10 +139,10 @@
         <div class="nav-item">
           <a
             class="nav-link"
-            href="#blog"
+            href="#blogs"
             data-bs-toggle="tooltip"
             data-bs-placement="bottom"
-            data-bs-title="Blog"
+            data-bs-title="Blogs"
             data-bs-custom-class="nav-tooltip"
           >
             <div class="icon-container">
@@ -189,78 +189,38 @@
 
             <!-- Botón o interruptor para cambiar el modo -->
             <div class="buttonContainer btn-animated">
-              <label class="switch">
-                <input class="switch__input" type="checkbox" role="switch" />
-                <svg
-                  class="switch__icon switch__icon--light"
-                  viewBox="0 0 12 12"
-                  width="12px"
-                  height="12px"
-                  aria-hidden="true"
-                >
-                  <g
-                    fill="none"
-                    stroke="#fff"
-                    stroke-width="1"
-                    stroke-linecap="round"
-                  >
-                    <circle cx="6" cy="6" r="2" />
-                    <g stroke-dasharray="1.5 1.5">
-                      <polyline
-                        points="6 10,6 11.5"
-                        transform="rotate(0,6,6)"
-                      />
-                      <polyline
-                        points="6 10,6 11.5"
-                        transform="rotate(45,6,6)"
-                      />
-                      <polyline
-                        points="6 10,6 11.5"
-                        transform="rotate(90,6,6)"
-                      />
-                      <polyline
-                        points="6 10,6 11.5"
-                        transform="rotate(135,6,6)"
-                      />
-                      <polyline
-                        points="6 10,6 11.5"
-                        transform="rotate(180,6,6)"
-                      />
-                      <polyline
-                        points="6 10,6 11.5"
-                        transform="rotate(225,6,6)"
-                      />
-                      <polyline
-                        points="6 10,6 11.5"
-                        transform="rotate(270,6,6)"
-                      />
-                      <polyline
-                        points="6 10,6 11.5"
-                        transform="rotate(315,6,6)"
-                      />
-                    </g>
-                  </g>
-                </svg>
-                <svg
-                  class="switch__icon switch__icon--dark"
-                  viewBox="0 0 12 12"
-                  width="12px"
-                  height="12px"
-                  aria-hidden="true"
-                >
-                  <g
-                    fill="none"
-                    stroke="#fff"
-                    stroke-width="1"
-                    stroke-linejoin="round"
-                    transform="rotate(-45,6,6)"
-                  >
-                    <path
-                      d="m9,10c-2.209,0-4-1.791-4-4s1.791-4,4-4c.304,0,.598.041.883.105-.995-.992-2.367-1.605-3.883-1.605C2.962.5.5,2.962.5,6s2.462,5.5,5.5,5.5c1.516,0,2.888-.613,3.883-1.605-.285.064-.578.105-.883.105Z"
-                    />
-                  </g>
-                </svg>
-                <span class="switch__sr">Dark Mode</span>
+              <label class="bb8-toggle">
+                <input class="bb8-toggle__checkbox" type="checkbox" />
+                <div class="bb8-toggle__container">
+                  <div class="bb8-toggle__scenery">
+                    <div class="bb8-toggle__star"></div>
+                    <div class="bb8-toggle__star"></div>
+                    <div class="bb8-toggle__star"></div>
+                    <div class="bb8-toggle__star"></div>
+                    <div class="bb8-toggle__star"></div>
+                    <div class="bb8-toggle__star"></div>
+                    <div class="bb8-toggle__star"></div>
+                    <div class="tatto-1"></div>
+                    <div class="tatto-2"></div>
+                    <div class="gomrassen"></div>
+                    <div class="hermes"></div>
+                    <div class="chenini"></div>
+                    <div class="bb8-toggle__cloud"></div>
+                    <div class="bb8-toggle__cloud"></div>
+                    <div class="bb8-toggle__cloud"></div>
+                  </div>
+                  <div class="bb8">
+                    <div class="bb8__head-container">
+                      <div class="bb8__antenna"></div>
+                      <div class="bb8__antenna"></div>
+                      <div class="bb8__head"></div>
+                    </div>
+                    <div class="bb8__body"></div>
+                  </div>
+                  <div class="artificial__hidden">
+                    <div class="bb8__shadow"></div>
+                  </div>
+                </div>
               </label>
             </div>
           </div>
@@ -749,7 +709,7 @@
       <!-- END: Section Challenges -->
 
       <!-- START: Section Blog -->
-      <section class="section-page" id="blogs">
+      <section id="blogs" class="section-page">
         <div class="container">
           <h2 class="display-1 mb-5 text-center">My Blogs</h2>
           <p class="text-center">
@@ -940,21 +900,33 @@
             </div>
           </div>
           <div class="d-none d-lg-block col-lg-3 text-end">
-            <a
-              class="text-decoration-none"
-              href="https://www.linkedin.com/in/gelson-hernandez/"
-            >
-              <i class="bi bi-linkedin p-2 socialicons"></i>
-            </a>
-            <a class="text-decoration-none" href="https://github.com/gelsonh">
-              <i class="bi bi-github p-2 socialicons"></i>
-            </a>
-            <a class="text-decoration-none" href="https://twitter.com/gelsonhz">
-              <i class="bi bi-twitter p-2 socialicons"></i>
-            </a>
-            <a class="text-decoration-none" href="mailto:gelsonhz@outlook.com">
-              <i class="bi bi-envelope-at p-2 socialicons"></i>
-            </a>
+            <div class="cardIcons">
+              <a
+                class="socialContainer containerOne"
+                href="https://www.linkedin.com/in/gelson-hernandez/"
+              >
+                <i class="bi bi-linkedin socialSvg"></i>
+              </a>
+
+              <a
+                class="socialContainer containerTwo"
+                href="https://github.com/gelsonh"
+              >
+                <i class="bi bi-github socialSvg"></i>
+              </a>
+              <a
+                class="socialContainer containerThree"
+                href="https://twitter.com/gelsonhz"
+              >
+                <i class="bi bi-twitter socialSvg"></i>
+              </a>
+              <a
+                class="socialContainer containerFour"
+                href="mailto:gelsonhz@outlook.com"
+              >
+                <i class="bi bi-envelope-at socialSvg"></i>
+              </a>
+            </div>
           </div>
         </div>
       </div>
