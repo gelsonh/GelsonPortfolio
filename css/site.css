@@ -34,18 +34,6 @@
 
   --gh-dark-color: #212121;
   --gh-light-color: #deeefb;
-
-  --gh-gray-100: hsl(210, 17%, 98%);
-  --gh-gray-150: hsl(210, 17%, 93%);
-  --gh-gray-200: hsl(210, 17%, 88%);
-  --gh-gray-300: hsl(210, 17%, 78%);
-  --gh-gray-400: hsl(210, 17%, 68%);
-  --gh-gray-500: rgb(130, 148, 166);
-  --gh-gray-600: hsl(210, 17%, 48%);
-  --gh-gray-700: hsl(210, 17%, 38%);
-  --gh-gray-800: hsl(210, 17%, 28%);
-  --gh-gray-850: hsl(210, 17%, 23%);
-  --gh-gray-900: hsl(210, 17%, 18%);
 }
 
 /* Element Overrides */
