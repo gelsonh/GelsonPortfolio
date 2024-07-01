@@ -1,6 +1,7 @@
 // Fetch and Display Latest Blog Posts
 
 document.addEventListener("DOMContentLoaded", function () {
+  
   // Function to fetch blog data from the API
   function fetchBlogData() {
     const baseUrl = "https://devdiary-production.up.railway.app";
