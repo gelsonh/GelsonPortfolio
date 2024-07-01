@@ -1176,11 +1176,19 @@ body[data-gh-theme="dark"] .build-by-text {
 
 /* Estilos específicos para el tema "dark" */
 body[data-gh-theme="dark"] .socialSvg path {
-  fill: rgb(44, 44, 44); /* Cambiar el color de relleno del icono en modo oscuro */
+  fill: rgb(
+    44,
+    44,
+    44
+  ); /* Cambiar el color de relleno del icono en modo oscuro */
 }
 
 body[data-gh-theme="dark"] .socialContainer {
-  background-color: rgb(255, 255, 255); /* Cambiar el color de fondo del contenedor en modo oscuro */
+  background-color: rgb(
+    255,
+    255,
+    255
+  ); /* Cambiar el color de fondo del contenedor en modo oscuro */
 }
 
 body[data-gh-theme="dark"] .containerOne:hover {
@@ -1199,7 +1207,7 @@ body[data-gh-theme="dark"] .containerThree:hover {
 }
 
 body[data-gh-theme="dark"] .containerFour:hover {
-  background-color: green; 
+  background-color: green;
   transition-duration: 0.3s;
 }
 
@@ -1208,8 +1216,62 @@ body[data-gh-theme="dark"] .socialContainer:active {
   transition-duration: 0.3s;
 }
 
+/* #Estilos específicos para el tema "dark" */
 
-  
+/* Estilos generales del modal */
+.modal-content {
+  background-color: #fff;
+  color: #000;
 }
 
-/* #Estilos específicos para el tema "dark" */
+/* Estilos específicos para el tema "dark" */
+body[data-gh-theme="dark"] .modal-content {
+  background-color: #333; /* Fondo oscuro */
+  color: #fff; /* Texto claro */
+}
+
+body[data-gh-theme="dark"] .modal-header,
+body[data-gh-theme="dark"] .modal-footer {
+  border-color: #444; /* Bordes más oscuros */
+}
+
+/* Título del modal */
+body[data-gh-theme="dark"] .modal-title {
+  color: #fff;
+}
+
+/* Botones del carrusel */
+body[data-gh-theme="dark"] .carousel-control-prev-icon,
+body[data-gh-theme="dark"] .carousel-control-next-icon {
+  filter: invert(1);
+}
+
+/* Botones del carrusel y texto alternativo */
+body[data-gh-theme="dark"] .carousel-control-prev,
+body[data-gh-theme="dark"] .carousel-control-next {
+  color: #fff;
+}
+
+/* Títulos en el cuerpo del modal */
+body[data-gh-theme="dark"] h3 {
+  color: #fff;
+}
+
+/* Estilo específico para el botón de cierre en el modo oscuro */
+body[data-gh-theme="dark"] .btn-close {
+  filter: invert(1); /* Invertir los colores del botón de cierre */
+}
+
+body[data-gh-theme="dark"] .btn-secondary {
+  --bs-btn-bg: #666; /* Botones oscuros */
+  --bs-btn-border-color: #666;
+  --bs-btn-hover-bg: #888;
+  --bs-btn-hover-border-color: #888;
+  --bs-btn-active-bg: #888;
+  --bs-btn-active-border-color: #888;
+}
+
+body[data-gh-theme="dark"] .carousel-control-prev-icon,
+body[data-gh-theme="dark"] .carousel-control-next-icon {
+  filter: invert(1); /* Invertir los colores de los iconos del carrusel */
+}
