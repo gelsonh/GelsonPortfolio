@@ -127,7 +127,7 @@ section {
 }
 
 #homeCover {
-  backdrop-filter: brightness(0.9) blur(0.05rem);
+  backdrop-filter: brightness(0.9) blur(0.03rem);
   height: 100%;
   width: 100%;
   position: absolute;
