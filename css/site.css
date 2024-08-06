@@ -121,7 +121,7 @@ section {
   background-image: url(/img/BG-Image/BG-4.jpeg);
   /* background-color: linear-gradient(to bottom, #709a8f, #046975); */
   background-size: cover;
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
   position: relative;
 }
