@@ -1137,6 +1137,10 @@ body[data-gh-theme="light"] .section-page h2 {
 }
 
 /* Estilos específicos para el tema "dark" */
+body[data-gh-theme="dark"] #home {
+  background-image: url(/img/BG-Image/BG-6.jpeg);
+}
+
 body[data-gh-theme="dark"] .btn-primary {
   --bs-btn-bg: #666; /* Ajusta según tus preferencias en modo oscuro */
   --bs-btn-border-color: #666; /* Ajusta según tus preferencias en modo oscuro */
