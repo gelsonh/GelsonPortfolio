@@ -1,6 +1,3 @@
-
-// Dark Mode Functionality
-
 document.addEventListener("DOMContentLoaded", function () {
   const switchInput = document.querySelector(".bb8-toggle__checkbox");
 
@@ -14,9 +11,16 @@ document.addEventListener("DOMContentLoaded", function () {
   const prefersDarkScheme = window.matchMedia(
     "(prefers-color-scheme: dark)"
   ).matches;
-  const savedTheme =
-    localStorage.getItem("theme") || (prefersDarkScheme ? "dark" : "light");
-  applyTheme(savedTheme);
+
+  // Check if there's a saved theme and if the system preference is dark
+  const savedTheme = localStorage.getItem("theme");
+  if (savedTheme) {
+    applyTheme(savedTheme);
+  } else if (prefersDarkScheme) {
+    applyTheme("dark");
+  } else {
+    applyTheme("light");
+  }
 
   // Change the theme when the switch toggles
   switchInput.addEventListener("change", function () {
