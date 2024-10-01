@@ -1,3 +1,6 @@
+/* ============================================
+   Main Fonts and Colors
+   ============================================ */
 :root {
   /* fonts */
   --gh-title-font: "Bebas Neue", sans-serif;
@@ -6,10 +9,8 @@
   --gh-body-font: "Roboto", sans-serif;
 
   /* basic colors */
-  --gh-dark-color: #333;
-  /* --gh-dark-color: #333; */
-  /* --gh-light-color: #deeefb; */
-  --gh-light-color: #605e5c;
+  --gh-dark-color: #212121; /* Actual color utilizado */
+  --gh-light-color: #deeefb; /* Actual color utilizado */
   --gh-white-color: #ffffff;
   --gh-background-color: rgba(250, 250, 250, 0.8);
 
@@ -19,6 +20,7 @@
   --gh-line-height: 1.5rem;
   --gh-title-color: var(--gh-dark-color);
 
+  /* Theme colors (Gray scale) */
   --gh-gray-core: #adb5bd;
   --gh-theme-core: var(--gh-gray-core);
   --gh-theme-100: var(--gh-gray-100);
@@ -32,12 +34,11 @@
   --gh-theme-800: var(--gh-gray-800);
   --gh-theme-850: var(--gh-gray-850);
   --gh-theme-900: var(--gh-gray-900);
-
-  --gh-dark-color: #212121;
-  --gh-light-color: #deeefb;
 }
 
-/* Element Overrides */
+/* ============================================
+     Element Overrides
+     ============================================ */
 body {
   font-family: var(--gh-body-font);
   font-size: var(--gh-font-size);
@@ -47,18 +48,12 @@ body {
   background: var(--gh-background-color);
 }
 
-h6,
-.h6,
-h5,
-.h5,
-h4,
-.h4,
-h3,
-.h3,
-h2,
-.h2,
 h1,
-.h1 {
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--gh-heading-font);
   font-weight: 700;
   text-transform: uppercase;
@@ -71,14 +66,14 @@ a {
 }
 
 a:hover {
-  color: var(--gh-orange-400);
+  color: var(--gh-orange-400); /* Variable no definida, revisa esto */
 }
 
 main {
   margin-bottom: 5rem;
 }
 
-/* Div Center */
+/* Div Centering */
 section {
   min-height: 100vh;
   display: flex;
@@ -91,19 +86,13 @@ section {
   box-shadow: 0 1px 3px;
 }
 
+/* Button Container */
 .buttonContainer {
   text-align: center;
   margin: 2rem;
 }
 
-/* ADD Photo */
-/* .mainTitle img {
-  border-radius: 50%;
-  width: 250px;
-  height: 250px;
-  margin: 0 auto;
-} */
-
+/* Button Primary Styles (using Bootstrap variables) */
 .btn-primary {
   --bs-btn-bg: var(--gh-theme-600);
   --bs-btn-border-color: var(--gh-theme-600);
@@ -113,14 +102,11 @@ section {
   --bs-btn-active-border-color: var(--gh-theme-700);
 }
 
-/* END: Elements Overrides */
-
-/* BEGIN: Home Section */
-
+/* ============================================
+     Home Section
+     ============================================ */
 #home {
-  /* background-color: var(--gh-theme-200); */
   background-image: url(/img/BG-Image/BG-7.jpeg);
-  /* background-color: linear-gradient(to bottom, #709a8f, #046975); */
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
@@ -159,10 +145,12 @@ section {
   font-size: 1.3rem;
   font-weight: 1.2rem;
   letter-spacing: 0.1rem;
-
   animation: moveInRight 1s ease-out;
 }
 
+/* ============================================
+     Animations
+     ============================================ */
 @keyframes moveInLeft {
   0% {
     opacity: 0;
@@ -207,15 +195,15 @@ section {
   }
 }
 
+/* Button Animation */
 .btn-animated {
   animation: moveInBottom 0.5s ease-out 0.75s;
   animation-fill-mode: backwards;
 }
 
-/* END: Home Section */
-
-/* BEGIN: Main Content */
-
+/* ============================================
+     Main Content
+     ============================================ */
 .section-page {
   padding-top: 5rem;
   padding-bottom: 8rem;
@@ -224,32 +212,42 @@ section {
   margin-top: -3rem;
 }
 
-.section-page:nth-child(even),
-.section-page:nth-child(even) > .container::after {
+.section-page:nth-child(even) {
   background-color: var(--gh-theme-100);
 }
-.section-page:nth-child(odd),
-.section-page:nth-child(odd) > .container::after {
+
+.section-page:nth-child(odd) {
   background-color: var(--gh-theme-150);
 }
 
-/* contact form box-shadow */
+/* Contact form box-shadow */
 .box-shadow {
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
     rgba(0, 0, 0, 0.22) 0px 15px 12px;
   border-radius: 0.5rem;
 }
 
-/* END: Main Content */
+/* ============================================
+     Footer styles
+     ============================================ */
+footer.fixed-bottom {
+  background-color: var(--gh-theme-900);
+}
 
-/* START: Footer styles */
+footer .card {
+  background-color: var(--gh-theme-800);
+}
 
-/* START: Icons */
+.build-by-text {
+  color: var(--gh-gray-150);
+}
 
+/* ============================================
+     Icons styles
+     ============================================ */
 .cardIcons {
-  /* background-color: var(--gh-theme-800); */
   display: flex;
-  flex-direction: row; /* Cambiar a dirección horizontal */
+  flex-direction: row;
   align-items: end;
   justify-content: end;
   padding: 10px 10px;
@@ -285,44 +283,20 @@ section {
   transform: scale(0.9);
   fill: #333333;
 }
-/* END: Icons */
 
-@keyframes slide-in-top {
-  0% {
-    transform: translateY(-50px);
-    opacity: 0;
-  }
-
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-footer.fixed-bottom {
-  background-color: var(--gh-theme-900);
-}
-
-footer .card {
-  background-color: var(--gh-theme-800);
-}
-
-.build-by-text {
-  color: var(--gh-gray-150);
-}
-
-/* END: Footer styles */
-
-/* Carousel */
-
+/* ============================================
+     Carousel
+     ============================================ */
 .carousel-item img {
   width: 100%;
-  height: 400px; /* Fija la altura de las imágenes */
-  object-fit: contain; /* Esto asegura que la imagen mantenga sus proporciones mientras llena el contenedor */
+  height: 400px;
+  object-fit: contain;
   background-color: var(--gh-gray-850);
 }
 
-/***** START: Media Queries ******/
+/* =======================================
+   Media Queries
+   ======================================= */
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
@@ -356,4 +330,4 @@ footer .card {
 @media (min-width: 1400px) {
 }
 
-/***** END: Media Queries ******/
+
