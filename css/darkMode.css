@@ -1081,205 +1081,108 @@
 }
 /* #endregion switchDarMode */
 
-/* #Estilos específicos para el tema "dark"*/
+/* #Estilos específicos para el tema "dark" */
 body[data-gh-theme="dark"] .section-page {
-  background-color: #333; /* Ajusta según tus preferencias en modo oscuro */
-  color: #fff; /* Ajusta según tus preferencias en modo oscuro */
+  background-color: var(--gh-gray-900); /* Fondo oscuro */
+  color: var(--gh-gray-150); /* Texto claro */
 }
 
 body[data-gh-theme="dark"] .section-page:nth-child(even),
 body[data-gh-theme="dark"] .section-page:nth-child(even) > .container::after {
-  background-color: #333; /* Ajusta según tus preferencias en modo oscuro */
+  background-color: var(--gh-gray-850); /* Fondo para secciones pares */
 }
 
 body[data-gh-theme="dark"] .section-page:nth-child(odd),
 body[data-gh-theme="dark"] .section-page:nth-child(odd) > .container::after {
-  background-color: #444; /* Ajusta según tus preferencias en modo oscuro */
+  background-color: var(--gh-gray-800); /* Fondo para secciones impares */
 }
 
-/* Estilos generales para el tema "light" */
-body[data-gh-theme="light"] .socialicons {
-  color: #fff;
-}
-
-body[data-gh-theme="light"] .socialicons:hover {
-  color: var(--gh-theme-600);
-}
-
-body[data-gh-theme="light"] footer.fixed-bottom {
-  color: #fff;
-}
-
-body[data-gh-theme="light"] footer .card {
-  color: #eee;
-}
-
-/* Estilos específicos para el tema "dark" */
+/* Estilos para iconos sociales */
 body[data-gh-theme="dark"] .socialicons {
-  color: var(--gh-theme-100);
-  /* Ajusta según tus preferencias en modo oscuro */
+  color: var(--gh-gray-150); /* Color claro para iconos */
 }
 
 body[data-gh-theme="dark"] .socialicons:hover {
-  color: var(--gh-theme-400); /* Ajusta según tus preferencias en modo oscuro */
+  color: var(--gh-gray-500); /* Ajuste para hover */
 }
 
+/* Footer oscuro */
 body[data-gh-theme="dark"] footer.fixed-bottom {
-  background-color: #222; /* Ajusta según tus preferencias en modo oscuro */
+  background-color: var(--gh-gray-900); /* Fondo oscuro */
 }
 
 body[data-gh-theme="dark"] footer .card {
-  background-color: #333; /* Ajusta según tus preferencias en modo oscuro */
+  background-color: var(--gh-gray-850); /* Fondo oscuro para tarjetas */
 }
 
-body[data-gh-theme="light"] .section-page h2 {
-  color: var(--gh-dark-color); /* Ajusta según tus variables */
+/* Título en modo oscuro */
+body[data-gh-theme="dark"] .section-page h2,
+body[data-gh-theme="dark"] h3 {
+  color: var(--gh-gray-150); /* Texto claro */
 }
 
-/* Estilos específicos para el tema "dark" */
-body[data-gh-theme="dark"] #home {
-  background-image: url(/img/BG-Image/BG-8.jpeg);
-}
-
-body[data-gh-theme="dark"] .about-img {
-  content: url("/img/Logo/AboutMe-SVG.svg");
-}
-
-body[data-gh-theme="dark"] .btn-primary {
-  --bs-btn-bg: #666; /* Ajusta según tus preferencias en modo oscuro */
-  --bs-btn-border-color: #666; /* Ajusta según tus preferencias en modo oscuro */
-  --bs-btn-hover-bg: #888; /* Ajusta según tus preferencias en modo oscuro */
-  --bs-btn-hover-border-color: #888; /* Ajusta según tus preferencias en modo oscuro */
-  --bs-btn-active-bg: #888; /* Ajusta según tus preferencias en modo oscuro */
-  --bs-btn-active-border-color: #888; /* Ajusta según tus preferencias en modo oscuro */
-}
-
-body[data-gh-theme="dark"] .section-page h2 {
-  color: #fff; /* Ajusta según tus preferencias en modo oscuro */
-}
-
-/* Estilos generales para las imágenes */
-.theme-logo {
-  display: none; /* Inicialmente oculta todas las imágenes */
-}
-
-/* Estilos específicos para el tema "light"  */
-body[data-gh-theme="light"] .theme-logo-light {
-  display: inline-block; /* Muestra la imagen en light mode */
-}
-
-/* Estilos específicos para el tema "dark"  */
+/* Imágenes específicas del modo oscuro */
 body[data-gh-theme="dark"] .theme-logo-dark {
-  display: inline-block; /* Muestra la imagen en dark mode */
+  display: inline-block; /* Muestra la imagen para el dark mode */
 }
 
-/* Estilos generales para el texto "Build by" */
-body[data-gh-theme="light"] .build-by-text {
-  color: #fff; /* Ajusta según tus preferencias en modo claro */
-}
-
+/* Texto "Build by" en modo oscuro */
 body[data-gh-theme="dark"] .build-by-text {
-  color: #fff; /* Ajusta según tus preferencias en modo oscuro */
+  color: var(--gh-gray-150); /* Texto claro */
 }
 
-/* Estilos específicos para el tema "dark" */
+/* Iconos sociales SVG */
 body[data-gh-theme="dark"] .socialSvg path {
-  fill: rgb(
-    44,
-    44,
-    44
-  ); /* Cambiar el color de relleno del icono en modo oscuro */
+  fill: var(--gh-gray-700); /* Color de los iconos en modo oscuro */
 }
 
 body[data-gh-theme="dark"] .socialContainer {
-  background-color: rgb(
-    255,
-    255,
-    255
-  ); /* Cambiar el color de fondo del contenedor en modo oscuro */
+  background-color: var(
+    --gh-gray-150
+  ); /* Fondo claro para contenedores sociales */
 }
 
 body[data-gh-theme="dark"] .containerOne:hover {
-  background-color: #0072b1;
+  background-color: var(--gh-gray-600);
   transition-duration: 0.3s;
 }
 
-body[data-gh-theme="dark"] .containerTwo:hover {
-  background-color: #777;
-  transition-duration: 0.3s;
+/* Botones en modo oscuro */
+body[data-gh-theme="dark"] .btn-primary {
+  --bs-btn-bg: var(--gh-gray-700);
+  --bs-btn-border-color: var(--gh-gray-700);
+  --bs-btn-hover-bg: var(--gh-gray-600);
+  --bs-btn-hover-border-color: var(--gh-gray-600);
+  --bs-btn-active-bg: var(--gh-gray-600);
+  --bs-btn-active-border-color: var(--gh-gray-600);
 }
 
-body[data-gh-theme="dark"] .containerThree:hover {
-  background-color: #1da1f2;
-  transition-duration: 0.3s;
+body[data-gh-theme="dark"] .btn-secondary {
+  --bs-btn-bg: var(--gh-gray-700);
+  --bs-btn-border-color: var(--gh-gray-700);
+  --bs-btn-hover-bg: var(--gh-gray-600);
+  --bs-btn-hover-border-color: var(--gh-gray-600);
+  --bs-btn-active-bg: var(--gh-gray-600);
+  --bs-btn-active-border-color: var(--gh-gray-600);
 }
 
-body[data-gh-theme="dark"] .containerFour:hover {
-  background-color: green;
-  transition-duration: 0.3s;
-}
-
-body[data-gh-theme="dark"] .socialContainer:active {
-  transform: scale(0.9);
-  transition-duration: 0.3s;
-}
-
-/* #Estilos específicos para el tema "dark" */
-
-/* Estilos generales del modal */
-.modal-content {
-  background-color: #fff;
-  color: #000;
-}
-
-/* Estilos específicos para el tema "dark" */
+/* Modal en modo oscuro */
 body[data-gh-theme="dark"] .modal-content {
-  background-color: #333; /* Fondo oscuro */
-  color: #fff; /* Texto claro */
+  background-color: var(--gh-gray-850); /* Fondo oscuro */
+  color: var(--gh-gray-150); /* Texto claro */
 }
 
 body[data-gh-theme="dark"] .modal-header,
 body[data-gh-theme="dark"] .modal-footer {
-  border-color: #444; /* Bordes más oscuros */
+  border-color: var(--gh-gray-800); /* Bordes oscuros */
 }
 
-/* Título del modal */
 body[data-gh-theme="dark"] .modal-title {
-  color: #fff;
+  color: var(--gh-gray-150); /* Texto claro */
 }
 
-/* Botones del carrusel */
+/* Botones del carrusel en modo oscuro */
 body[data-gh-theme="dark"] .carousel-control-prev-icon,
 body[data-gh-theme="dark"] .carousel-control-next-icon {
-  filter: invert(1);
-}
-
-/* Botones del carrusel y texto alternativo */
-body[data-gh-theme="dark"] .carousel-control-prev,
-body[data-gh-theme="dark"] .carousel-control-next {
-  color: #fff;
-}
-
-/* Títulos en el cuerpo del modal */
-body[data-gh-theme="dark"] h3 {
-  color: #fff;
-}
-
-/* Estilo específico para el botón de cierre en el modo oscuro */
-body[data-gh-theme="dark"] .btn-close {
-  filter: invert(1); /* Invertir los colores del botón de cierre */
-}
-
-body[data-gh-theme="dark"] .btn-secondary {
-  --bs-btn-bg: #666; /* Botones oscuros */
-  --bs-btn-border-color: #666;
-  --bs-btn-hover-bg: #888;
-  --bs-btn-hover-border-color: #888;
-  --bs-btn-active-bg: #888;
-  --bs-btn-active-border-color: #888;
-}
-
-body[data-gh-theme="dark"] .carousel-control-prev-icon,
-body[data-gh-theme="dark"] .carousel-control-next-icon {
-  filter: invert(1); /* Invertir los colores de los iconos del carrusel */
+  filter: invert(1); /* Invertir colores en modo oscuro */
 }
