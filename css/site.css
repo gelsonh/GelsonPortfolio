@@ -9,8 +9,8 @@
   --gh-body-font: "Roboto", sans-serif;
 
   /* basic colors */
-  --gh-dark-color: #212121; /* Actual color utilizado */
-  --gh-light-color: #deeefb; /* Actual color utilizado */
+  --gh-dark-color: #212121; 
+  --gh-light-color: #deeefb; 
   --gh-white-color: #ffffff;
   --gh-background-color: rgba(250, 250, 250, 0.8);
 
