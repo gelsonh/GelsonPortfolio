@@ -103,6 +103,21 @@
       href="/img/favicon/android-chrome-512x512.png"
       type="image/x-icon"
     />
+
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-VYVSYH1XX4"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-VYVSYH1XX4");
+    </script>
   </head>
 
   <body data-gh-theme="light" data-gh-theme="dark">
@@ -304,7 +319,7 @@
             </div>
           </div>
 
-          <a href="/img/Resumé.pdf" class="btn btn-primary my-3"
+          <a href="/img/Resume.pdf" class="btn btn-primary my-3"
             >Resume<i class="bi bi-box-arrow-down ps-2"></i
           ></a>
         </div>
@@ -326,6 +341,12 @@
                       alt="csharp"
                     />
                   </div>
+                  <!-- <div class="icon dotnet">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/blazor/blazor-original.svg"
+                      alt="dotnetcore"
+                    />
+                  </div> -->
                   <div class="icon dotnet">
                     <img
                       src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg"
@@ -345,8 +366,8 @@
                   </p>
                   <p>
                     I specialize in website development using ASP.NET Core Web,
-                    Blazor, and MVC frameworks, applying established design
-                    patterns for optimal outcomes.
+                    and MVC frameworks, applying established design patterns for
+                    optimal outcomes.
                   </p>
                 </div>
               </div>
@@ -701,7 +722,21 @@
             >.
           </p>
 
-          <div class="row gy-5 mt-5 row-cols-1 row-cols-md-2 row-cols-lg-3">
+          <!-- Botones
+          <div class="d-flex justify-content-center">
+            <button id="btn-js" class="btn btn-primary my-3 mx-2 active">
+              JavaScript
+            </button>
+            <button id="btn-blazor" class="btn btn-primary my-3 mx-2">
+              Blazor
+            </button>
+          </div> -->
+
+          <!-- Contenedor JavaScript -->
+          <div
+            id="js-challenges"
+            class="row gy-5 mt-5 row-cols-1 row-cols-md-2 row-cols-lg-3"
+          >
             <!-- START: MovieList -->
             <div class="col">
               <div class="hc-wrapper">
@@ -884,6 +919,12 @@
             </div>
             <!-- END: Rewing -->
           </div>
+
+          <!-- Contenedor Blazor -->
+          <!-- <div
+            id="blazor-challenges"
+            class="row gy-5 mt-5 row-cols-1 row-cols-md-2 row-cols-lg-3 d-none"
+          ></div> -->
         </div>
       </section>
       <!-- END: Section Challenges -->
@@ -1066,7 +1107,7 @@
             /> -->
 
             <br />
-            <span class="build-by-text">&copy; 2024 Gelson Hernandez</span>
+            <span class="build-by-text">&copy; 2025 Gelson Hernandez</span>
           </div>
           <div
             class="col-9 col-lg-6 d-flex justify-content-end justify-content-lg-center"
