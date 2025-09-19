@@ -9,8 +9,8 @@
   --gh-body-font: "Roboto", sans-serif;
 
   /* basic colors */
-  --gh-dark-color: #212121; 
-  --gh-light-color: #deeefb; 
+  --gh-dark-color: #333333;
+  --gh-light-color: #deeefb;
   --gh-white-color: #ffffff;
   --gh-background-color: rgba(250, 250, 250, 0.8);
 
@@ -329,5 +329,3 @@ footer .card {
 /* XX-Large devices (larger desktops, 1400px and up) */
 @media (min-width: 1400px) {
 }
-
-
