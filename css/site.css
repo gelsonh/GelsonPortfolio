@@ -62,11 +62,13 @@ h6 {
 }
 
 a {
-  color: rgb(251, 126, 24);
+  color: #a54a00;
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.14em;
 }
 
 a:hover {
-  color: var(--gh-orange-400); /* Variable no definida, revisa esto */
+  color: #7a3600;
 }
 
 main {
@@ -94,12 +96,34 @@ section {
 
 /* Button Primary Styles (using Bootstrap variables) */
 .btn-primary {
-  --bs-btn-bg: var(--gh-theme-600);
-  --bs-btn-border-color: var(--gh-theme-600);
-  --bs-btn-hover-bg: var(--gh-theme-700);
-  --bs-btn-hover-border-color: var(--gh-theme-700);
-  --bs-btn-active-bg: var(--gh-theme-700);
-  --bs-btn-active-border-color: var(--gh-theme-700);
+  --bs-btn-bg: #495057;
+  --bs-btn-border-color: #495057;
+  --bs-btn-hover-bg: #343a40;
+  --bs-btn-hover-border-color: #343a40;
+  --bs-btn-active-bg: #343a40;
+  --bs-btn-active-border-color: #343a40;
+  --bs-btn-color: #ffffff;
+  --bs-btn-hover-color: #ffffff;
+  --bs-btn-active-color: #ffffff;
+}
+
+.btn-secondary {
+  --bs-btn-bg: #495057;
+  --bs-btn-border-color: #495057;
+  --bs-btn-hover-bg: #343a40;
+  --bs-btn-hover-border-color: #343a40;
+  --bs-btn-active-bg: #343a40;
+  --bs-btn-active-border-color: #343a40;
+  --bs-btn-color: #ffffff;
+  --bs-btn-hover-color: #ffffff;
+  --bs-btn-active-color: #ffffff;
+}
+
+.btn-secondary a,
+.btn-secondary a:hover,
+.btn-secondary a:focus {
+  color: #ffffff;
+  text-decoration: none;
 }
 
 /* ============================================
@@ -274,6 +298,7 @@ footer.fixed-bottom {
 
 footer .card {
   background-color: var(--gh-theme-800);
+  color: var(--gh-gray-100);
 }
 
 .build-by-text {

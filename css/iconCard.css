@@ -10,7 +10,7 @@
 .icon-card-body {
   background-color: var(--gh-theme-900);
   /* color: var(--gh-light-color); */
-  color: #adb5bd;
+  color: #e9ecef;
   padding: 2rem;
   padding-top: 4rem;
   text-align: center;
@@ -23,6 +23,12 @@
   transition: background-color 0.25s ease-in-out, border-color 0.25s ease-in-out,
     box-shadow 0.25 ease-in-out;
   height: calc(100% - 2.5rem);
+}
+
+.icon-card-body a,
+.icon-card-body a:hover,
+.icon-card-body a:focus {
+  color: #ffd166;
 }
 
 .icon-card:hover .icon-card-body {
