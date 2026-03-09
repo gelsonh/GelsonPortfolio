@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" role="img" aria-labelledby="title desc">
+  <title id="title">Dev Diary retro arcade cover</title>
+  <desc id="desc">Neon notebook and code in retro arcade style.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#061a40"/>
+      <stop offset="1" stop-color="#1f6f78"/>
+    </linearGradient>
+    <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M20 0H0V20" fill="none" stroke="#6fffe9" stroke-opacity=".14"/>
+    </pattern>
+  </defs>
+  <rect width="300" height="300" fill="url(#bg)"/>
+  <rect width="300" height="300" fill="url(#grid)"/>
+  <rect x="56" y="40" width="168" height="174" fill="#fff8d6" stroke="#6fffe9" stroke-width="4"/>
+  <rect x="70" y="40" width="16" height="174" fill="#ff4d8d"/>
+  <rect x="102" y="68" width="92" height="10" fill="#061a40"/>
+  <rect x="102" y="90" width="76" height="8" fill="#8ddad5"/>
+  <rect x="102" y="108" width="86" height="8" fill="#8ddad5"/>
+  <rect x="98" y="144" width="20" height="8" fill="#6fffe9"/>
+  <rect x="116" y="152" width="20" height="8" fill="#6fffe9"/>
+  <rect x="164" y="144" width="20" height="8" fill="#ffde59"/>
+  <rect x="146" y="152" width="20" height="8" fill="#ffde59"/>
+  <rect x="130" y="136" width="16" height="32" fill="#ff4d8d"/>
+  <text x="32" y="246" fill="#ffde59" font-family="monospace" font-size="30" font-weight="700">DEV</text>
+  <text x="32" y="276" fill="#6fffe9" font-family="monospace" font-size="30" font-weight="700">DIARY</text>
+</svg>

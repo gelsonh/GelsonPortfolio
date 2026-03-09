@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" role="img" aria-labelledby="title desc">
+  <title id="title">Reverse String retro arcade cover</title>
+  <desc id="desc">Retro direction arrows and mirrored word.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#03045e"/>
+      <stop offset="1" stop-color="#00b4d8"/>
+    </linearGradient>
+  </defs>
+  <rect width="300" height="300" fill="url(#bg)"/>
+  <rect x="38" y="80" width="224" height="98" fill="#111827" stroke="#90e0ef" stroke-width="4"/>
+  <text x="64" y="122" fill="#ffde59" font-family="monospace" font-size="28" font-weight="700">HELLO</text>
+  <rect x="82" y="144" width="122" height="8" fill="#90e0ef"/>
+  <path d="M82 148 62 136v24z" fill="#90e0ef"/>
+  <text x="92" y="202" fill="#caf0f8" font-family="monospace" font-size="28" font-weight="700">OLLEH</text>
+  <rect x="224" y="56" width="18" height="18" fill="#ffde59"/>
+  <rect x="248" y="40" width="10" height="10" fill="#ffde59"/>
+  <text x="32" y="246" fill="#ffde59" font-family="monospace" font-size="26" font-weight="700">REVERSE</text>
+  <text x="32" y="276" fill="#caf0f8" font-family="monospace" font-size="26" font-weight="700">STRING</text>
+</svg>

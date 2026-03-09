@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" role="img" aria-labelledby="title desc">
+  <title id="title">Contact Plus retro arcade cover</title>
+  <desc id="desc">Arcade style contact card with neon plus symbol.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#003049"/>
+      <stop offset="1" stop-color="#00b4d8"/>
+    </linearGradient>
+    <pattern id="grid" width="22" height="22" patternUnits="userSpaceOnUse">
+      <path d="M22 0H0V22" fill="none" stroke="#caf0f8" stroke-opacity=".12"/>
+    </pattern>
+  </defs>
+  <rect width="300" height="300" fill="url(#bg)"/>
+  <rect width="300" height="300" fill="url(#grid)"/>
+  <rect x="34" y="64" width="148" height="120" fill="#f1faee" stroke="#caf0f8" stroke-width="4"/>
+  <rect x="60" y="88" width="36" height="36" fill="#00b4d8"/>
+  <rect x="70" y="98" width="16" height="16" fill="#f1faee"/>
+  <rect x="110" y="92" width="44" height="10" fill="#003049"/>
+  <rect x="110" y="112" width="34" height="8" fill="#89dceb"/>
+  <rect x="110" y="130" width="28" height="8" fill="#89dceb"/>
+  <g transform="translate(188 104)">
+    <rect x="18" y="18" width="54" height="54" fill="#051923" stroke="#ffde59" stroke-width="4"/>
+    <rect x="40" y="28" width="10" height="34" fill="#ffde59"/>
+    <rect x="28" y="40" width="34" height="10" fill="#ffde59"/>
+  </g>
+  <text x="32" y="246" fill="#ffde59" font-family="monospace" font-size="28" font-weight="700">CONTACT</text>
+  <text x="32" y="276" fill="#caf0f8" font-family="monospace" font-size="28" font-weight="700">PLUS</text>
+</svg>

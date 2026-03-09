@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" role="img" aria-labelledby="title desc">
+  <title id="title">Mortgage Calculator retro arcade cover</title>
+  <desc id="desc">Arcade house and calculator cover.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#041f1e"/>
+      <stop offset="1" stop-color="#0ead69"/>
+    </linearGradient>
+    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0H0V24" fill="none" stroke="#d8f3dc" stroke-opacity=".12"/>
+    </pattern>
+  </defs>
+  <rect width="300" height="300" fill="url(#bg)"/>
+  <rect width="300" height="300" fill="url(#grid)"/>
+  <path d="M52 172 128 110l76 62v40H52z" fill="#f1faee" stroke="#ffde59" stroke-width="4"/>
+  <rect x="82" y="148" width="22" height="24" fill="#0ead69"/>
+  <rect x="174" y="126" width="72" height="92" fill="#081c15" stroke="#d8f3dc" stroke-width="4"/>
+  <rect x="190" y="142" width="40" height="12" fill="#ffde59"/>
+  <g fill="#d8f3dc">
+    <rect x="188" y="166" width="12" height="12"/><rect x="206" y="166" width="12" height="12"/><rect x="224" y="166" width="12" height="12"/>
+    <rect x="188" y="184" width="12" height="12"/><rect x="206" y="184" width="12" height="12"/><rect x="224" y="184" width="12" height="12"/>
+  </g>
+  <text x="30" y="246" fill="#ffde59" font-family="monospace" font-size="24" font-weight="700">MORTGAGE</text>
+  <text x="30" y="276" fill="#d8f3dc" font-family="monospace" font-size="24" font-weight="700">CALCULATOR</text>
+</svg>
