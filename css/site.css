@@ -246,6 +246,8 @@ section {
   position: relative;
   overflow: visible;
   margin-top: -3rem;
+  content-visibility: auto;
+  contain-intrinsic-size: 1000px;
 }
 
 .section-page:nth-child(even) {

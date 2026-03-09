@@ -60,6 +60,13 @@
     <!-- Page Title -->
     <title>Gelson Hernández | Full Stack .Net Web Developer</title>
 
+    <link
+      rel="preload"
+      as="image"
+      href="/img/site/backgrounds/main-background.jpeg"
+      fetchpriority="high"
+    />
+
     <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
@@ -69,6 +76,7 @@
     />
 
     <!-- Bootstrap Icons -->
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
@@ -78,7 +86,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fira+Sans:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fira+Sans:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
 
@@ -468,8 +476,6 @@
           </p>
           <div class="row gy-5 mt-5 row-cols-1 row-cols-lg-3">
          
-
-
             <!-- START: Bug Tracker -->
             <div class="col">
               <div class="hc-wrapper">
@@ -479,7 +485,7 @@
                       media="(min-width: 992px)"
                       srcset="/img/projects/bug-tracker/card-cover.svg"
                     />
-                    <img src="/img/projects/bug-tracker/card-cover.svg" alt="Bug Tracker cover" />
+                    <img src="/img/projects/bug-tracker/card-cover.svg" alt="Bug Tracker cover" width="300" height="300" loading="lazy" decoding="async" />
                   </picture>
                   <div class="hc-content">
                     <h4 class="text-center text-light">Bug Tracking System</h4>
@@ -509,7 +515,7 @@
                       media="(min-width: 992px)"
                       srcset="/img/projects/dev-diary/card-cover.svg"
                     />
-                    <img src="/img/projects/dev-diary/card-cover.svg" alt="Dev Diary cover" />
+                    <img src="/img/projects/dev-diary/card-cover.svg" alt="Dev Diary cover" width="300" height="300" loading="lazy" decoding="async" />
                   </picture>
                   <div class="hc-content">
                     <h4 class="text-center text-light">Dev Diary</h4>
@@ -531,8 +537,8 @@
             </div>
             <!-- END: Blog -->
 
-              <!-- START: Contact+ -->
-              <div class="col">
+            <!-- START: Contact+ -->
+            <div class="col">
                 <div class="hc-wrapper">
                   <div class="hc-card">
                     <picture>
@@ -540,7 +546,7 @@
                         media="(min-width: 992px)"
                         srcset="/img/projects/contact-plus/card-cover.svg"
                       />
-                      <img src="/img/projects/contact-plus/card-cover.svg" alt="Contact Plus cover" />
+                      <img src="/img/projects/contact-plus/card-cover.svg" alt="Contact Plus cover" width="300" height="300" loading="lazy" decoding="async" />
                     </picture>
                     <div class="hc-content">
                       <h4 class="text-center text-light">Contact+</h4>
@@ -556,10 +562,9 @@
                     </div>
                   </div>
                 </div>
-              </div>
-              <!-- END: Contact+ -->
-
-      
+            </div>
+            <!-- END: Contact+ -->
+             
           </div>
         </div>
       </section>
@@ -596,6 +601,10 @@
                     <img
                       src="/img/projects/movie-list/card-cover.svg"
                       alt="movieListImg"
+                      width="300"
+                      height="300"
+                      loading="lazy"
+                      decoding="async"
                     />
                   </picture>
                   <div class="hc-content">
@@ -627,6 +636,10 @@
                     <img
                       src="/img/projects/mortgage-calculator/card-cover.svg"
                       alt="mortgageLoanCalculator"
+                      width="300"
+                      height="300"
+                      loading="lazy"
+                      decoding="async"
                     />
                   </picture>
                   <div class="hc-content">
@@ -659,6 +672,10 @@
                     <img
                       src="/img/projects/palindrome/card-cover.svg"
                       alt="palindromeImg"
+                      width="300"
+                      height="300"
+                      loading="lazy"
+                      decoding="async"
                     />
                   </picture>
                   <div class="hc-content">
@@ -691,6 +708,10 @@
                     <img
                       src="/img/projects/tracking-events/card-cover.svg"
                       alt="trackingEvents"
+                      width="300"
+                      height="300"
+                      loading="lazy"
+                      decoding="async"
                     />
                   </picture>
                   <div class="hc-content">
@@ -719,7 +740,7 @@
                       media="(min-width: 992px)"
                       srcset="/img/projects/fizz-buzz/card-cover.svg"
                     />
-                    <img src="/img/projects/fizz-buzz/card-cover.svg" alt="Fizz Buzz cover" />
+                    <img src="/img/projects/fizz-buzz/card-cover.svg" alt="Fizz Buzz cover" width="300" height="300" loading="lazy" decoding="async" />
                   </picture>
                   <div class="hc-content">
                     <h4 class="text-center text-light">Fizz Buzz</h4>
@@ -747,7 +768,7 @@
                       media="(min-width: 992px)"
                       srcset="/img/projects/rewing/card-cover.svg"
                     />
-                    <img src="/img/projects/rewing/card-cover.svg" alt="Reverse String cover" />
+                    <img src="/img/projects/rewing/card-cover.svg" alt="Reverse String cover" width="300" height="300" loading="lazy" decoding="async" />
                   </picture>
                   <div class="hc-content">
                     <h4 class="text-center text-light">Rewing</h4>
@@ -782,12 +803,33 @@
             showcase my work and attract new clients. Through my blog, I hope to
             inspire others to learn and share about the world of technology.
           </p>
+          <div id="blog-loading" class="blog-loading" aria-hidden="true">
+            <article class="blog-skeleton">
+              <div class="blog-skeleton-media shimmer"></div>
+              <div class="blog-skeleton-body">
+                <div class="blog-skeleton-line blog-skeleton-line-title shimmer"></div>
+                <div class="blog-skeleton-line shimmer"></div>
+                <div class="blog-skeleton-line shimmer"></div>
+                <div class="blog-skeleton-line blog-skeleton-line-short shimmer"></div>
+              </div>
+            </article>
+            <article class="blog-skeleton">
+              <div class="blog-skeleton-media shimmer"></div>
+              <div class="blog-skeleton-body">
+                <div class="blog-skeleton-line blog-skeleton-line-title shimmer"></div>
+                <div class="blog-skeleton-line shimmer"></div>
+                <div class="blog-skeleton-line shimmer"></div>
+                <div class="blog-skeleton-line blog-skeleton-line-short shimmer"></div>
+              </div>
+            </article>
+          </div>
+          <div id="blog-list"></div>
           <template id="blog-template">
-            <article class="card mb-4 blog-article">
+            <article class="card mb-4 blog-article blog-article-enter">
               <div class="row blog-row g-0">
                 <div class="col-lg-4 blog-header">
                   <a target="_blank" href="#" class="blog-image-link">
-                    <img src="" class="blog-image" alt="Blog post image" />
+                    <img src="" class="blog-image" alt="Blog post image" width="1200" height="800" loading="lazy" decoding="async" />
                     <div class="blog-date">
                       <div class="blog-day" data-blog="day">00</div>
                       <div class="blog-month" data-blog="month">Month</div>
