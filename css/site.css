@@ -195,6 +195,42 @@ section {
   }
 }
 
+@keyframes sectionFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes sectionFadeLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes sectionFadeRight {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 /* Button Animation */
 .btn-animated {
   animation: moveInBottom 0.5s ease-out 0.75s;
@@ -292,6 +328,46 @@ footer .card {
   height: 400px;
   object-fit: contain;
   background-color: var(--gh-gray-850);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .section-page h2 {
+    animation: sectionFadeUp 0.7s ease-out both;
+  }
+
+  .section-page > .container > p {
+    animation: sectionFadeUp 0.8s ease-out 0.08s both;
+  }
+
+  #skills .col:nth-child(odd) .icon-card,
+  #projects .col:nth-child(odd) .hc-wrapper,
+  #challenges .col:nth-child(odd) .hc-wrapper {
+    animation: sectionFadeLeft 0.75s ease-out both;
+  }
+
+  #skills .col:nth-child(even) .icon-card,
+  #projects .col:nth-child(even) .hc-wrapper,
+  #challenges .col:nth-child(even) .hc-wrapper {
+    animation: sectionFadeRight 0.75s ease-out both;
+  }
+
+  #blogs .blog-article,
+  #contact .box-shadow {
+    animation: sectionFadeUp 0.8s ease-out both;
+  }
+
+  .section-page .icon-card,
+  .section-page .hc-card,
+  .section-page .blog-article,
+  .section-page .box-shadow {
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+  }
+
+  .section-page .icon-card:hover,
+  .section-page .blog-article:hover,
+  .section-page .box-shadow:hover {
+    transform: translateY(-4px);
+  }
 }
 
 /* =======================================
