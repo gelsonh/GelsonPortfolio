@@ -68,6 +68,41 @@
     color: var(--gh-gray-150);
   }
 
+  .blog-article {
+    background-color: var(--gh-gray-850);
+    color: var(--gh-gray-150);
+  }
+
+  .blog-article .card-body,
+  .blog-article .card-title,
+  .blog-article .card-text,
+  .blog-article .text-muted {
+    color: var(--gh-gray-150) !important;
+  }
+
+  .blog-skeleton {
+    background: rgba(55, 65, 81, 0.92);
+    box-shadow: rgba(0, 0, 0, 0.28) 0px 10px 20px -8px,
+      rgba(0, 0, 0, 0.32) 0px 6px 12px -10px;
+  }
+
+  .blog-skeleton-line {
+    background: var(--gh-gray-700);
+  }
+
+  .shimmer {
+    background-image: linear-gradient(
+      90deg,
+      rgba(75, 85, 99, 0.92) 0%,
+      rgba(107, 114, 128, 1) 50%,
+      rgba(75, 85, 99, 0.92) 100%
+    );
+  }
+
+  .blog-date {
+    color: rgba(255, 209, 102, 0.92);
+  }
+
   .modal-header,
   .modal-footer {
     border-color: var(--gh-gray-800);

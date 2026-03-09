@@ -25,9 +25,10 @@
   height: calc(100% - 2.5rem);
 }
 
-.icon-card-body a,
-.icon-card-body a:hover,
-.icon-card-body a:focus {
+.icon-card .icon-card-body a,
+.icon-card .icon-card-body a:hover,
+.icon-card .icon-card-body a:focus,
+.icon-card .icon-card-body a:visited {
   color: #ffd166;
 }
 
